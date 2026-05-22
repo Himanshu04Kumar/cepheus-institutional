@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>B2B Device Management & Laptop Repair for Institutions in Delhi | Cepheus</title>
+    
+    <meta name="description" content="Cepheus offers transparent, fully-documented B2B device management and laptop repair services for schools, offices, coaching institutes, and clinics across Delhi. Replace unpredictable repair vendors with itemized billing and accountability.">
+    <meta name="keywords" content="B2B laptop repair Delhi, institutional device management, school computer maintenance Delhi, corporate IT repair Delhi, managed office repair services">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://cepheus.co.in">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Institutional Device Management & Repair Services | Cepheus">
+    <meta property="og:description" content="Transparent, documented, and reliable device management services tailored for Delhi's schools, offices, and professional organizations.">
+    <meta property="og:url" content="https://cepheus.co.in">
+    <meta property="og:site_name" content="Cepheus Institutional">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;500&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+
+    <style>
+        /* --- GLOBAL DESIGN SYSTEM LAYER --- */
+        :root {
+            --paper:        #f5f2ed;
+            --paper-dark:   #ece8e1;
+            --ink:          #0d0d0d;
+            --ink-mid:      #3a3a3a;
+            --ink-light:    #888888;
+            --accent:       #c8440a;
+            --accent-light: #f0e8e2;
+            --dark-section: #0d0d0d;
+            --border:       rgba(0,0,0,0.10);
+            --border-white: rgba(255,255,255,0.08);
+            --max-width:    1100px;
+        }
+
+        /* --- LAYOUT RESET & BASE STYLES --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            background-color: var(--paper);
+            color: var(--ink);
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 300;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        /* --- STRUCTURAL CONTAINERS & UTILITIES --- */
+        .container {
+            width: 100%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-padding {
+            padding: 7rem 0;
+        }
+
+        .section-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--ink-light);
+            font-weight: 500;
+            margin-bottom: 2rem;
+            display: block;
+        }
+
+        .headline-serif {
+            font-family: 'DM Serif Display', serif;
+            font-size: clamp(28px, 4vw, 44px);
+            line-height: 1.2;
+            font-weight: 400;
+            color: var(--ink);
+            margin-bottom: 3.5rem;
+        }
+
+        /* --- BUTTONS --- */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            text-decoration: none;
+            padding: 0.95rem 1.85rem;
+            border-radius: 0px;
+            transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: var(--accent);
+            color: #ffffff;
+            border: 0.5px solid var(--accent);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--ink);
+            border-color: var(--ink);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--accent);
+            border: 0.5px solid var(--accent);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--accent-light);
+        }
+
+        .btn-white {
+            background-color: #ffffff;
+            color: var(--ink);
+            border: 0.5px solid #ffffff;
+        }
+
+        .btn-white:hover {
+            background-color: var(--paper-dark);
+            color: var(--ink);
+        }
+
+        /* --- VISUAL SCROLL REVEAL CONFIG --- */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* --- FIXED NAVIGATION --- */
+        .nav-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 52px;
+            background: rgba(245, 242, 237, 0.92);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-bottom: 0.5px solid var(--border);
+            z-index: 1000;
+        }
+
+        .nav-wrapper {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand-block {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+        }
+
+        .brand-name {
+            font-family: 'DM Serif Display', serif;
+            font-size: 18px;
+            color: var(--ink);
+            line-height: 1.1;
+        }
+
+        .brand-sub {
+            font-size: 10px;
+            color: var(--ink-light);
+            font-weight: 500;
+            margin-top: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-link {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--ink-light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--accent);
+        }
+
+        .nav-cta .btn {
+            padding: 0.5rem 1.2rem;
+            font-size: 11px;
+        }
+
+        /* --- HERO DISPLAY LAYOUT --- */
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background-color: var(--paper);
+            position: relative;
+            padding-top: 52px;
+            overflow: hidden;
+        }
+
+        .hero-layout {
+            position: relative;
+            width: 100%;
+            z-index: 2;
+        }
+
+        .hero-eyebrow {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent);
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .hero-title {
+            font-family: 'DM Serif Display', serif;
+            font-size: clamp(48px, 7.5vw, 88px);
+            line-height: 1.05;
+            font-weight: 400;
+            color: var(--ink);
+        }
+
+        .hero-title span.italic-accent {
+            font-style: italic;
+            color: var(--accent);
+        }
+
+        .hero-subheadline {
+            font-size: 16px;
+            font-weight: 300;
+            color: var(--ink-mid);
+            max-width: 520px;
+            line-height: 1.85;
+            margin-top: 1.5rem;
+        }
+
+        .hero-actions {
+            margin-top: 2.5rem;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .hero-decoration {
+            position: absolute;
+            top: 10%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .circle-ring {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 0.5px solid rgba(199, 68, 10, 0.08);
+            border-radius: 50%;
+        }
+        .circle-ring:nth-child(1) { width: 100%; height: 100%; }
+        .circle-ring:nth-child(2) { width: 75%; height: 75%; }
+        .circle-ring:nth-child(3) { width: 50%; height: 50%; }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 3rem;
+            left: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--ink-light);
+        }
+
+        .scroll-line {
+            width: 40px;
+            height: 0.5px;
+            background-color: var(--ink-light);
+        }
+
+        /* --- SECTION 2: THE PROBLEM --- */
+        .problem-section {
+            background-color: var(--paper-dark);
+        }
+
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3.5rem 4rem;
+            margin-bottom: 4.5rem;
+        }
+
+        .problem-statement {
+            border-left: 2px solid var(--accent);
+            padding-left: 1.25rem;
+        }
+
+        .problem-label {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--ink-light);
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .problem-text {
+            font-size: 13px;
+            line-height: 1.7;
+            color: var(--ink-mid);
+        }
+
+        .dark-manifesto-panel {
+            background-color: var(--dark-section);
+            border-left: 3px solid var(--accent);
+            padding: 2.5rem;
+            margin-top: 4rem;
+        }
+
+        .dark-manifesto-text {
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 1.8;
+        }
+
+        /* --- SECTION 3: WHAT WE OFFER --- */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .feature-block {
+            background-color: var(--paper-dark);
+            border: 0.5px solid var(--border);
+            border-top: 2px solid var(--accent);
+            padding: 2rem 1.5rem;
+        }
+
+        .feature-icon {
+            font-size: 24px;
+            color: var(--accent);
+            margin-bottom: 1.25rem;
+            display: inline-block;
+        }
+
+        .feature-title {
+            font-family: 'DM Serif Display', serif;
+            font-size: 18px;
+            font-weight: 400;
+            color: var(--ink);
+            margin-bottom: 0.75rem;
+        }
+
+        .feature-body {
+            font-size: 13px;
+            line-height: 1.65;
+            color: var(--ink-mid);
+        }
+
+        /* --- SECTION 4: DEVICE MATRIX COVERAGE --- */
+        .coverage-section {
+            background-color: var(--paper-dark);
+        }
+
+        .coverage-layout {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .coverage-list {
+            list-style: none;
+        }
+
+        .coverage-item {
+            border-bottom: 0.5px solid var(--border);
+            padding: 1rem 0;
+            font-size: 14px;
+            color: var(--ink);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .coverage-brand-tags {
+            font-size: 12px;
+            color: var(--ink-light);
+            font-weight: 500;
+        }
+
+        .note-card {
+            background-color: var(--paper);
+            border: 0.5px solid var(--border);
+            padding: 1.5rem;
+        }
+
+        .note-heading {
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--ink);
+            margin-bottom: 0.75rem;
+        }
+
+        .note-body {
+            font-size: 13px;
+            line-height: 1.65;
+            color: var(--ink-mid);
+        }
+
+        .alert-row {
+            grid-column: span 2;
+            background-color: var(--accent-light);
+            padding: 1rem 1.5rem;
+            font-size: 13px;
+            color: var(--ink-mid);
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* --- SECTION 5: THE PROCESS --- */
+        .timeline-container {
+            position: relative;
+            max-width: 800px;
+            margin-top: 4rem;
+        }
+
+        .timeline-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 35px;
+            width: 0.5px;
+            height: 100%;
+            background-color: var(--border);
+            z-index: 1;
+        }
+
+        .timeline-event {
+            position: relative;
+            display: grid;
+            grid-template-columns: 70px 1fr;
+            gap: 2rem;
+            margin-bottom: 3.5rem;
+            z-index: 2;
+        }
+
+        .timeline-event:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-number {
+            font-family: 'DM Serif Display', serif;
+            font-size: 24px;
+            color: var(--ink-light);
+            background-color: var(--paper);
+            text-align: center;
+            width: 70px;
+        }
+
+        .timeline-content {
+            padding-top: 4px;
+        }
+
+        .timeline-title {
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--ink);
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-desc {
+            font-size: 13px;
+            line-height: 1.7;
+            color: var(--ink-mid);
+        }
+
+        /* --- SECTION 6: WHO WE WORK WITH --- */
+        .dark-section-bg {
+            background-color: var(--dark-section);
+            color: #ffffff;
+        }
+
+        .dark-section-bg .headline-serif {
+            color: #ffffff;
+        }
+
+        .org-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .org-card {
+            background-color: #161616;
+            border: 0.5px solid var(--border-white);
+            padding: 1.75rem;
+        }
+
+        .org-title {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .org-desc {
+            font-size: 13px;
+            line-height: 1.65;
+            color: #b3b3b3;
+        }
+
+        /* --- SECTION 7: WHY NOT AMC --- */
+        .comparison-section {
+            background-color: var(--paper-dark);
+        }
+
+        .comp-header-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .comp-header {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 500;
+        }
+
+        .comp-header.amc { color: var(--ink-light); }
+        .comp-header.cepheus { color: var(--accent); padding-left: 2rem; border-left: 0.5px solid var(--border); }
+
+        .comp-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 1.25rem 0;
+            border-bottom: 0.5px solid var(--border);
+        }
+
+        .comp-row:last-of-type {
+            border-bottom: 1px solid var(--border);
+        }
+
+        .comp-cell-left {
+            font-size: 13px;
+            color: var(--ink-light);
+            padding-right: 1.5rem;
+        }
+
+        .comp-cell-right {
+            font-size: 13px;
+            color: var(--ink);
+            font-weight: 500;
+            padding-left: 2rem;
+            border-left: 0.5px solid var(--border);
+        }
+
+        .comp-note {
+            font-size: 13px;
+            font-style: italic;
+            color: var(--ink-light);
+            margin-top: 2rem;
+            display: block;
+        }
+
+        /* --- SECTION 8: GETTING STARTED --- */
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+            margin-bottom: 5rem;
+        }
+
+        .step-block .step-large-num {
+            font-family: 'DM Serif Display', serif;
+            font-size: 64px;
+            color: var(--paper-dark);
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+
+        .step-block .step-title {
+            font-family: 'DM Serif Display', serif;
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 0.75rem;
+        }
+
+        .step-block .step-desc {
+            font-size: 13px;
+            line-height: 1.65;
+            color: var(--ink-mid);
+        }
+
+        .cta-banner-panel {
+            background-color: var(--accent);
+            color: #ffffff;
+            padding: 3.5rem 2rem;
+            text-align: center;
+        }
+
+        .cta-banner-panel h3 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 28px;
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+        }
+
+        .cta-banner-panel p {
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 2rem;
+        }
+
+        /* --- SECTION 9: CONTACT DESIGN --- */
+        .contact-layout {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-layout .headline-serif .italic-accent {
+            font-style: italic;
+            color: var(--accent);
+        }
+
+        .contact-sub {
+            font-size: 15px;
+            color: var(--ink-mid);
+            line-height: 1.7;
+            margin-bottom: 2.5rem;
+        }
+
+        .contact-metadata {
+            font-size: 12px;
+            color: var(--ink-light);
+            margin-top: 1.5rem;
+            letter-spacing: 0.02em;
+        }
+
+        .contact-email-alt {
+            font-size: 12px;
+            font-style: italic;
+            color: var(--ink-light);
+            margin-top: 1rem;
+            display: block;
+        }
+
+        .contact-email-alt a {
+            color: var(--ink-light);
+            text-decoration: underline;
+        }
+
+        /* --- PLATFORM FOOTER ENGINE --- */
+        .footer-container {
+            border-top: 0.5px solid var(--border);
+            padding: 3rem 0;
+            background-color: var(--paper);
+        }
+
+        .footer-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-left {
+            font-family: 'DM Serif Display', serif;
+            font-size: 16px;
+            color: var(--ink);
+        }
+
+        .footer-center {
+            font-size: 12px;
+            color: var(--ink-mid);
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .footer-center a {
+            color: var(--ink-mid);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .footer-center a:hover {
+            color: var(--accent);
+        }
+
+        .footer-right {
+            font-size: 12px;
+            color: var(--ink-light);
+        }
+
+        .footer-attribution {
+            text-align: center;
+            font-size: 11px;
+            color: var(--ink-light);
+            margin-top: 2.5rem;
+            border-top: 0.5px solid var(--border);
+            padding-top: 1.5rem;
+            line-height: 1.6;
+        }
+
+        /* --- MOBILE STRUCTURAL OPTIMIZATIONS --- */
+        @media (max-width: 992px) {
+            .features-grid { grid-template-columns: repeat(2, 1fr); }
+            .coverage-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+            .alert-row { grid-column: span 1; }
+            .steps-grid { grid-template-columns: 1fr; gap: 2rem; }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .section-padding { padding: 5rem 0; }
+            .hero-actions { flex-direction: column; gap: 0.75rem; }
+            .hero-actions .btn { width: 100%; }
+            .problem-grid, .org-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .features-grid { grid-template-columns: 1fr; }
+            .hero-decoration, .scroll-indicator { display: none; }
+            
+            .timeline-container::before { left: 20px; }
+            .timeline-event { grid-template-columns: 40px 1fr; gap: 1rem; }
+            .timeline-number { width: 40px; font-size: 18px; }
+
+            /* Mobile AMC Stacking Optimization */
+            .comp-header-row { display: none; }
+            .comp-matrix-container { display: flex; flex-direction: column; gap: 2.5rem; }
+            .comp-row { display: block; border: 0.5px solid var(--border); padding: 1.25rem; background: var(--paper); }
+            .comp-cell-left { padding-right: 0; margin-bottom: 0.75rem; color: var(--ink-light); }
+            .comp-cell-left::before { content: 'TYPICAL AMC: '; font-size: 10px; font-weight: 500; display: block; margin-bottom: 2px; letter-spacing: 0.05em;}
+            .comp-cell-right { padding-left: 0; border-left: none; color: var(--ink); }
+            .comp-cell-right::before { content: 'CEPHEUS: '; font-size: 10px; font-weight: 500; display: block; margin-bottom: 2px; color: var(--accent); letter-spacing: 0.05em;}
+            
+            .footer-wrapper { flex-direction: column; gap: 1.5rem; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="nav-container" aria-label="Main Navigation">
+        <div class="container nav-wrapper">
+            <a href="#" class="brand-block">
+                <span class="brand-name">Cepheus</span>
+                <span class="brand-sub">Device Management for Institutions</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#why-cepheus" class="nav-link">Why Cepheus</a></li>
+                <li><a href="#offers" class="nav-link">What We Offer</a></li>
+                <li><a href="#coverage" class="nav-link">What We Cover</a></li>
+                <li><a href="#process" class="nav-link">How It Works</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="https://wa.me/919958314514?text=Hi%2C+I+represent+[organisation]+and+would+like+to+discuss+a+device+management+partnership+with+Cepheus." class="btn btn-secondary">Discuss Partnership</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container hero-layout">
+            <span class="hero-eyebrow">Cepheus for Institutions · Delhi</span>
+            <h1 class="hero-title">
+                One number.<br>
+                <span class="italic-accent">Every device covered.</span>
+            </h1>
+            <p class="hero-subheadline">
+                Schools, offices, and organisations across Delhi are spending time, money, and trust on fragmented repair vendors with zero accountability. Cepheus replaces that chaos with a single managed service — transparent, documented, and reliable.
+            </p>
+            <div class="hero-actions">
+                <a href="https://wa.me/919958314514?text=Hi%2C+I+represent+[organisation]+and+would+like+to+discuss+a+device+management+partnership+with+Cepheus." class="btn btn-primary">Discuss a Partnership &rarr;</a>
+                <a href="#process" class="btn btn-secondary">See How It Works</a>
+            </div>
+        </div>
+        <div class="hero-decoration" aria-hidden="true">
+            <div class="circle-ring"></div>
+            <div class="circle-ring"></div>
+            <div class="circle-ring"></div>
+        </div>
+        <div class="scroll-indicator" aria-hidden="true">
+            <div class="scroll-line"></div>
+            <span>Scroll to Explore</span>
+        </div>
+    </header>
+
+    <section id="why-cepheus" class="problem-section section-padding">
+        <div class="container">
+            <span class="section-label">01 — The Problem</span>
+            <h2 class="headline-serif">Managing device repairs across multiple vendors is a hidden operational burden.</h2>
+            
+            <div class="problem-grid">
+                <div class="problem-statement reveal">
+                    <span class="problem-label">No accountability</span>
+                    <p class="problem-text">When a device comes back from a local shop, there is no record of what was done, what parts were used, or whether they were genuine. Your organisation has no visibility.</p>
+                </div>
+                <div class="problem-statement reveal">
+                    <span class="problem-label">Unpredictable costs</span>
+                    <p class="problem-text">Repair bills arrive with no breakdown. Labour and parts are bundled together. Budgeting for device maintenance becomes impossible.</p>
+                </div>
+                <div class="problem-statement reveal">
+                    <span class="problem-label">Fragmented vendors</span>
+                    <p class="problem-text">Different vendors for different devices. Different contact numbers. Different quality standards. One point of failure every time a device breaks.</p>
+                </div>
+                <div class="problem-statement reveal">
+                    <span class="problem-label">No documentation</span>
+                    <p class="problem-text">Auditors, management committees, and trustees require expense justification. A receipt from a local shop is not documentation. We provide complete repair records.</p>
+                </div>
+            </div>
+
+            <div class="dark-manifesto-panel reveal">
+                <p class="dark-manifesto-text">Most institutions are paying for repairs they cannot verify, from vendors they cannot audit, with no record they can show to anyone. That is the problem Cepheus solves.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="offers" class="features-section section-padding">
+        <div class="container">
+            <span class="section-label">02 — What We Offer</span>
+            <h2 class="headline-serif">A managed repair service built around accountability.</h2>
+            
+            <div class="features-grid">
+                <div class="feature-block reveal">
+                    <i class="ti ti-device-laptop feature-icon" aria-hidden="true"></i>
+                    <h3 class="feature-title">Device Pickup and Delivery</h3>
+                    <p class="feature-body">We collect devices from your premises, repair them at our facility, and return them. No staff time wasted travelling to repair shops.</p>
+                </div>
+                <div class="feature-block reveal">
+                    <i class="ti ti-camera feature-icon" aria-hidden="true"></i>
+                    <h3 class="feature-title">Complete Photo Documentation</h3>
+                    <p class="feature-body">Every repair is photographed at each stage — parts removed, parts installed, condition before and after. You receive a full visual record of every job.</p>
+                </div>
+                <div class="feature-block reveal">
+                    <i class="ti ti-checklist feature-icon" aria-hidden="true"></i>
+                    <h3 class="feature-title">Pre-Approved Pricing</h3>
+                    <p class="feature-body">We share the diagnosis and exact cost before any work begins. Nothing proceeds without your approval. No surprise invoices.</p>
+                </div>
+                <div class="feature-block reveal">
+                    <i class="ti ti-file-invoice feature-icon" aria-hidden="true"></i>
+                    <h3 class="feature-title">Consolidated Monthly Invoicing</h3>
+                    <p class="feature-body">All repairs in a month consolidated into one clean invoice with full breakdown. Ready for accounts, auditors, and management review.</p>
+                </div>
+                <div class="feature-block reveal">
+                    <i class="ti ti-clock feature-icon" aria-hidden="true"></i>
+                    <h3 class="feature-title">Priority Response</h3>
+                    <p class="feature-body">Institutional bookings get priority pickup slots. We understand that a broken device in a school or office cannot wait three days.</p>
+                </div>
+                <div class="feature-block reveal">
+                    <i class="ti ti-shield-check feature-icon" aria-hidden="true"></i>
+                    <h3 class="feature-title">Service Warranty on Every Repair</h3>
+                    <p class="feature-body">Every repair carries a warranty period. If the same issue recurs within the warranty window, we fix it at no additional charge.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="coverage" class="coverage-section section-padding">
+        <div class="container">
+            <span class="section-label">03 — Device Coverage</span>
+            <h2 class="headline-serif">Laptops, desktops, and more.</h2>
+            
+            <div class="coverage-layout">
+                <ul class="coverage-list reveal">
+                    <li class="coverage-item">
+                        <span>Laptops</span>
+                        <span class="coverage-brand-tags">Dell, HP, Lenovo, Apple, Asus, Acer</span>
+                    </li>
+                    <li class="coverage-item">Desktop computers and all-in-ones</li>
+                    <li class="coverage-item">Computer monitors</li>
+                    <li class="coverage-item">Printers — basic diagnosis and repair</li>
+                    <li class="coverage-item">Projectors — basic diagnosis</li>
+                    <li class="coverage-item">Keyboards and peripherals</li>
+                </ul>
+                
+                <div class="note-card reveal">
+                    <h3 class="note-heading">Starting with laptops</h3>
+                    <p class="note-body">We begin with laptop repair and expand device categories as our network grows. If you have a specific device requirement not listed, WhatsApp us — we will tell you honestly whether we can help.</p>
+                </div>
+                
+                <div class="alert-row reveal">
+                    <i class="ti ti-alert-triangle" style="color: var(--accent);" aria-hidden="true"></i>
+                    <span>We currently operate in select Delhi zones. WhatsApp us to confirm we cover your location before proceeding.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="process-section section-padding">
+        <div class="container">
+            <span class="section-label">04 — How It Works</span>
+            <h2 class="headline-serif">Simple for you. Rigorous for us.</h2>
+            
+            <div class="timeline-container">
+                <div class="timeline-event reveal">
+                    <div class="timeline-number">01</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">You raise a request</h3>
+                        <p class="timeline-desc">WhatsApp us with the device details and issue. We respond within the hour with an estimated price range and pickup slot options.</p>
+                    </div>
+                </div>
+                <div class="timeline-event reveal">
+                    <div class="timeline-number">02</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">We collect the device</h3>
+                        <p class="timeline-desc">Our team picks up from your premises at the agreed slot. Device is photographed immediately on receipt — condition documented before we touch anything.</p>
+                    </div>
+                </div>
+                <div class="timeline-event reveal">
+                    <div class="timeline-number">03</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Diagnosis and approval</h3>
+                        <p class="timeline-desc">We diagnose the issue and share the exact repair cost with parts breakdown. Work begins only after your explicit approval. Nothing proceeds without it.</p>
+                    </div>
+                </div>
+                <div class="timeline-event reveal">
+                    <div class="timeline-number">04</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Repair with documentation</h3>
+                        <p class="timeline-desc">Full photographic record at every stage. Parts used are documented — name, type, whether original or compatible. You can see exactly what happened to your device.</p>
+                    </div>
+                </div>
+                <div class="timeline-event reveal">
+                    <div class="timeline-number">05</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Return and invoice</h3>
+                        <p class="timeline-desc">Device returned to your premises. Full repair report shared. Monthly consolidated invoice generated for all repairs that month.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="dark-section-bg section-padding">
+        <div class="container">
+            <span class="section-label" style="color: var(--ink-light);">05 — Who We Work With</span>
+            <h2 class="headline-serif">Built for organisations that need accountability, not just repairs.</h2>
+            
+            <div class="org-grid">
+                <div class="org-card reveal" style="border-top: 2px solid #c8440a;">
+                    <h3 class="org-title">Schools and Colleges</h3>
+                    <p class="org-desc">Teacher laptops, computer labs, admin systems, projectors. We understand that academic continuity cannot be disrupted by broken equipment.</p>
+                </div>
+                <div class="org-card reveal" style="border-top: 2px solid #b8941f;">
+                    <h3 class="org-title">Coaching Institutes</h3>
+                    <p class="org-desc">High device density, constant usage, tight budgets. We offer fair pricing with full documentation that holds up to any scrutiny.</p>
+                </div>
+                <div class="org-card reveal" style="border-top: 2px solid #4a8c6e;">
+                    <h3 class="org-title">Small and Mid-Size Offices</h3>
+                    <p class="org-desc">Teams of 10 to 200 people. No dedicated IT department. We become your on-call device management partner.</p>
+                </div>
+                <div class="org-card reveal" style="border-top: 2px solid #4a6e8c;">
+                    <h3 class="org-title">Co-working Spaces</h3>
+                    <p class="org-desc">Shared equipment, member devices, high turnover. We offer priority repair and a member benefit your community will actually use.</p>
+                </div>
+                <div class="org-card reveal" style="border-top: 2px solid #7c4a8c;">
+                    <h3 class="org-title">Clinics and Diagnostic Centres</h3>
+                    <p class="org-desc">Billing systems, diagnostic interfaces, admin computers. Device downtime directly impacts patient care. We prioritise your requests accordingly.</p>
+                </div>
+                <div class="org-card reveal" style="border-top: 2px solid #8c6e4a;">
+                    <h3 class="org-title">NGOs and Non-Profits</h3>
+                    <p class="org-desc">Limited budgets, aging equipment, constant repair needs. We offer honest pricing and full documentation for donor reporting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="comparison-section section-padding">
+        <div class="container">
+            <span class="section-label">06 — A Transparent Alternative</span>
+            <h2 class="headline-serif">Annual maintenance contracts promise coverage. They rarely deliver transparency.</h2>
+            
+            <div class="comp-matrix-container reveal">
+                <div class="comp-header-row">
+                    <div class="comp-header amc">Typical AMC Provider</div>
+                    <div class="comp-header cepheus">Cepheus</div>
+                </div>
+                <div class="comp-row">
+                    <div class="comp-cell-left">Fixed annual fee regardless of actual repair volume</div>
+                    <div class="comp-cell-right">Pay only for repairs done — no wasted spend</div>
+                </div>
+                <div class="comp-row">
+                    <div class="comp-cell-left">No documentation of what was repaired or how</div>
+                    <div class="comp-cell-right">Full photographic record of every repair</div>
+                </div>
+                <div class="comp-row">
+                    <div class="comp-cell-left">Parts used are unverifiable — original or counterfeit unknown</div>
+                    <div class="comp-cell-right">Parts documented by name, type, and authenticity</div>
+                </div>
+                <div class="comp-row">
+                    <div class="comp-cell-left">Single vendor with no accountability mechanism</div>
+                    <div class="comp-cell-right">Pre-approval required before any work — you stay in control</div>
+                </div>
+                <div class="comp-row">
+                    <div class="comp-cell-left">Bundled invoice with no breakdown</div>
+                    <div class="comp-cell-right">Itemised invoice — parts, labour, per device</div>
+                </div>
+                <div class="comp-row">
+                    <div class="comp-cell-left">Response time depends on vendor availability</div>
+                    <div class="comp-cell-right">Priority slots for institutional clients</div>
+                </div>
+            </div>
+            <small class="comp-note reveal">If your current AMC is working perfectly, we are not the right fit. If you have ever questioned what your AMC provider actually does to your devices — we are worth a conversation.</small>
+        </div>
+    </section>
+
+    <section class="steps-section section-padding">
+        <div class="container">
+            <span class="section-label">07 — Next Steps</span>
+            <h2 class="headline-serif">No lengthy procurement process. No long-term commitment required.</h2>
+            
+            <div class="steps-grid">
+                <div class="step-block reveal">
+                    <div class="step-large-num">1</div>
+                    <h3 class="step-title">One conversation</h3>
+                    <p class="step-desc">WhatsApp us with your organisation name, number of devices, and what you currently do for repairs. We respond the same day.</p>
+                </div>
+                <div class="step-block reveal">
+                    <div class="step-large-num">2</div>
+                    <h3 class="step-title">No-risk first repair</h3>
+                    <p class="step-desc">We handle your first repair with a simple guarantee — you pay only when you're completely satisfied with the quality and documentation. If it doesn't meet your standard, you owe us nothing.</p>
+                </div>
+                <div class="step-block reveal">
+                    <div class="step-large-num">3</div>
+                    <h3 class="step-title">Simple agreement</h3>
+                    <p class="step-desc">A one-page MOU. No complex contract. No annual commitment unless you want one. Start with per-repair and move to a managed arrangement when you're ready.</p>
+                </div>
+            </div>
+
+            <div class="cta-banner-panel reveal">
+                <h3>Start with one repair. No commitment.</h3>
+                <p>We would rather prove our quality than ask you to trust us on paper.</p>
+                <a href="https://wa.me/919958314514?text=Hi%2C+I+represent+[organisation]+and+would+like+to+discuss+a+device+management+partnership+with+Cepheus." class="btn btn-white">WhatsApp Us &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <div class="contact-layout">
+                <span class="section-label">08 — Get In Touch</span>
+                <h2 class="headline-serif">Ready to simplify<br><span class="italic-accent">device management?</span></h2>
+                <p class="contact-sub">WhatsApp us with your organisation details. We respond within the hour during business hours. No sales calls. No follow-up pressure. Just a straightforward conversation.</p>
+                
+                <a href="https://wa.me/919958314514?text=Hi%2C+I+represent+[organisation]+and+would+like+to+discuss+a+device+management+partnership+with+Cepheus." class="btn btn-primary" style="padding: 1.2rem 2.5rem; font-size: 14px;">Open WhatsApp &rarr;</a>
+                
+                <div class="contact-metadata">Delhi &middot; Institutional Partnerships &middot; Response within 1 hour</div>
+                <span class="contact-email-alt">Prefer email? <a href="mailto:cepheusdtu@gmail.com">cepheusdtu@gmail.com</a></span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-container">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-left">Cepheus</div>
+                <div class="footer-center">
+                    <a href="https://cepheus.in">Consumer Repairs</a>
+                    <a href="#">Institutional</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-right">&copy; 2026 Cepheus &middot; New Delhi</div>
+            </div>
+            <div class="footer-attribution">
+                Individual repair? Visit <a href="https://cepheus.in" style="color: var(--ink-mid);">cepheus.in &rarr;</a><br><br>
+                Transparent device management for institutions. Built in Delhi.<br>
+                <span style="font-size: 10px; opacity: 0.85; letter-spacing: 0.05em; text-transform: uppercase; display: inline-block; margin-top: 0.5rem;">Founder: Himanshu Kumar, DTU</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // SCROLL REVEAL ENGINE
+            const revealElements = document.querySelectorAll('.reveal');
+            
+            const revealOnScroll = () => {
+                const triggerBottom = window.innerHeight * 0.85;
+                
+                revealElements.forEach(el => {
+                    const elTop = el.getBoundingClientRect().top;
+                    if (elTop < triggerBottom) {
+                        el.classList.add('active');
+                    }
+                });
+            };
+
+            // Initialize on load and bind to scroll listener
+            window.addEventListener('scroll', revealOnScroll);
+            revealOnScroll(); // Run once instantly for above-the-fold content
+
+            // SMOOTH SCROLL ROUTER ENGINE
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetEl = document.querySelector(targetId);
+                    if (targetEl) {
+                        e.preventDefault();
+                        const navHeight = 52;
+                        const targetPosition = targetEl.getBoundingClientRect().top + window.pageYOffset - navHeight;
+                        
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
