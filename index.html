@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <title>Cepheus · Institutional Partnerships</title>
+    <title>Cepheus</title>
     
     <meta name="description" content="Cepheus offers transparent, fully-documented B2B device management and laptop repair services for schools, offices, coaching institutes, and clinics across Delhi. Replace unpredictable repair vendors with itemized billing and accountability.">
     <meta name="keywords" content="B2B laptop repair Delhi, institutional device management, school computer maintenance Delhi, corporate IT repair Delhi, managed office repair services">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://cepheus.co.in">
+    <link rel="canonical" href="https://institutional.cepheus.co.in">
     
     <meta property="og:type" content="website">
     <meta property="og:title" content="Institutional Device Management & Repair Services | Cepheus">
     <meta property="og:description" content="Transparent, documented, and reliable device management services tailored for Delhi's schools, offices, and professional organizations.">
-    <meta property="og:url" content="https://cepheus.co.in">
+    <meta property="og:url" content="https://institutional.cepheus.co.in">
     <meta property="og:site_name" content="Cepheus Institutional">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -194,8 +194,9 @@
 
         .nav-links {
             display: flex;
-            gap: 2.5rem;
+            gap: 2rem;
             list-style: none;
+            align-items: center;
         }
 
         .nav-link {
@@ -210,6 +211,22 @@
 
         .nav-link:hover {
             color: var(--accent);
+        }
+
+        .nav-link-consumer {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 0.5px solid transparent;
+            transition: border-color 0.2s ease, color 0.2s ease;
+        }
+
+        .nav-link-consumer:hover {
+            border-color: var(--accent);
+            color: #b03a07;
         }
 
         .nav-cta .btn {
@@ -586,6 +603,11 @@
             border-bottom: 1px solid var(--border);
         }
 
+        .comp-column {
+            display: flex;
+            flex-direction: column;
+        }
+
         .comp-cell-left {
             font-size: 13px;
             color: var(--ink-light);
@@ -755,8 +777,11 @@
             .steps-grid { grid-template-columns: 1fr; gap: 2rem; }
         }
 
+        @media (max-width: 860px) {
+            .nav-links { display: none !important; }
+        }
+
         @media (max-width: 768px) {
-            .nav-links { display: none; }
             .section-padding { padding: 5rem 0; }
             .hero-actions { flex-direction: column; gap: 0.75rem; }
             .hero-actions .btn { width: 100%; }
@@ -794,6 +819,7 @@
                 <li><a href="#offers" class="nav-link">What We Offer</a></li>
                 <li><a href="#coverage" class="nav-link">What We Cover</a></li>
                 <li><a href="#process" class="nav-link">How It Works</a></li>
+                <li><a href="https://cepheus.co.in" class="nav-link-consumer">Individual Repair? &rarr;</a></li>
             </ul>
             <div class="nav-cta">
                 <a href="https://wa.me/919958314514?text=Hi%2C+I+represent+[organisation]+and+would+like+to+discuss+a+device+management+partnership+with+Cepheus." class="btn btn-secondary">Discuss Partnership</a>
@@ -1097,14 +1123,14 @@
             <div class="footer-wrapper">
                 <div class="footer-left">Cepheus</div>
                 <div class="footer-center">
-                    <a href="https://cepheus.in">Consumer Repairs</a>
+                    <a href="https://cepheus.co.in">Consumer Repairs</a>
                     <a href="#">Institutional</a>
                     <a href="#contact">Contact</a>
                 </div>
                 <div class="footer-right">&copy; 2026 Cepheus &middot; New Delhi</div>
             </div>
             <div class="footer-attribution">
-                Individual repair? Visit <a href="https://cepheus.in" style="color: var(--ink-mid);">cepheus.in &rarr;</a><br><br>
+                Individual repair? Visit <a href="https://cepheus.co.in" style="color: var(--ink-mid); font-weight: 500;">cepheus.co.in &rarr;</a><br><br>
                 Transparent device management for institutions. Built in Delhi.<br>
                 <span style="font-size: 10px; opacity: 0.85; letter-spacing: 0.05em; text-transform: uppercase; display: inline-block; margin-top: 0.5rem;">Founder: Himanshu Kumar, DTU</span>
             </div>
